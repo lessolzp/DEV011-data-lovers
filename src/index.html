@@ -6,6 +6,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Studio Ghibli</h1>
+    </header>
+    <main>
+      <h2>Peliculas</h2>
+      <form>
+        <label for="select-filter">Filtrar por:</label>
+        <select data-testid="select-filter" name="filtro">
+          <option value="director">Director</option>
+          <option value="producer">Productor</option>
+          <option value="release_date">Año</option>
+        </select>
+        <label for="select-sort">Ordenar:</label>
+        <select data-testid="select-sort" name="orden">
+          <option value="rt_score">Ranking</option>
+          <option value="release_date">Año</option>
+          <option value="people">Personaje</option>
+          <legend>Orden:</legend>
+          <label for="asc">
+              <input type="radio" id="asc" name="sort-order" value="asc"> Ascendente
+          </label>
+          <label for="desc">
+              <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
+          </label>
+        </select>
+        <button data-testid="button-clear">Reset</button>
+      </form>
+      <section id="root">
+        <ul>
+          <li itemscope itemtype="https://schema.org/Movie"></li>
+          <span itemprop="Peliculas"></span>
+          <dl itemscope itemtype="studio Ghibli">
+            <dt>Name:</dt><dd itemprop="name"></dd>
+            <dt>Descripción:</dt><dd itemprop="año"></dd>
+            <dt>Director:</dt><dd itemprop="dir"></dd>
+            <dt>Productor:</dt><dd itemprop="producer"></dd>
+            <dt>Año:</dt><dd itemprop="año"></dd>
+          </dl>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
