@@ -1,0 +1,19 @@
+body{
+    background-color: #101010;
+    color: white;
+    font-family: Arial;
+    font-size: min(18px, max(5vw, 13px));
+  }
+
+.tarjetas {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+ul {
+	width: 200px;
+	margin: 1rem;
+
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}

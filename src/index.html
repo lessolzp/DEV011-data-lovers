@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
@@ -7,6 +8,7 @@
   </head>
   <body>
     <header>
+      <script src="main.js" type="module"></script>
       <h1>Studio Ghibli</h1>
     </header>
     <main>
@@ -31,7 +33,7 @@
               <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
           </label>
         </select>
-        <button data-testid="button-clear">Reset</button>
+        <button data-testid="button-clear" id="button-filter">Reset</button>
       </form>
       <section id="root">
         <ul>
@@ -48,7 +50,3 @@
       </section>
     </main>
     <footer></footer>
-
-    <script src="main.js" type="module"></script>
-  </body>
-</html>
