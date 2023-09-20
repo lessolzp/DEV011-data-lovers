@@ -1,7 +1,7 @@
 // estas funciones son de ejemplo
 
 export const renderItems = (data) => {
-  //filteredData en un futuro va a ser el resultado de la función del filtro
+  
   const filteredData = data.films;
   //Creación de elementos
   //Primero vamos a hacer la variable de referencia "padre"
