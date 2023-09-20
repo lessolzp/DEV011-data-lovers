@@ -9,3 +9,5 @@ function callingrenderItems(){
   return renderItems(data)
 }
 btn.addEventListener('click', callingrenderItems);
+
+//falta agregar en el html el botón que estoy utilizando aqui 
