@@ -1,24 +1,20 @@
 body{
 	flex-shrink: 0;
-	background: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F04%2Fstudio-ghibli-free-wallpaper-download-info-00.jpg?w=960&cbr=1&q=90&fit=max);
-	background-repeat: no-repeat;
-	background-size: cover;
-    color: white;
+	background: #FFE9F2;
+	color: #605DF2;
     font-family: Arial;
     font-size: min(18px, max(5vw, 13px));
+	margin: 0;
   }
-
-header {
-	border-radius: 1.25rem;
-	opacity: 0.7;
-	background: #FFF;
-	line-height: normal;
-	width: 66.66694rem;
-	height: 8.6755rem;
+header{
+	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
+	background-repeat: repeat;
 	flex-shrink: 0;
+	display: flex;
+	align-items: center;
 }
 h1{
-	color: #0C9EF0;
+	color: #605DF2;
 	font-family: Inter;
 	font-size: 4rem;
 	font-style: italic;
@@ -45,7 +41,5 @@ section{
 ul {
 	flex-direction: row;
 	list-style: none;
-}
-
-.li {
+	box-sizing: border-box
 }
