@@ -1,19 +1,51 @@
 body{
-    background-color: #101010;
+	flex-shrink: 0;
+	background: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2020%2F04%2Fstudio-ghibli-free-wallpaper-download-info-00.jpg?w=960&cbr=1&q=90&fit=max);
+	background-repeat: no-repeat;
+	background-size: cover;
     color: white;
     font-family: Arial;
     font-size: min(18px, max(5vw, 13px));
   }
 
+header {
+	border-radius: 1.25rem;
+	opacity: 0.7;
+	background: #FFF;
+	line-height: normal;
+	width: 66.66694rem;
+	height: 8.6755rem;
+	flex-shrink: 0;
+}
+h1{
+	color: #0C9EF0;
+	font-family: Inter;
+	font-size: 4rem;
+	font-style: italic;
+	font-weight: 900;
+}
+h2 {
+	color: #000;
+	font-family: Inter;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+section{
+	fill: #FFF;
+	stroke-width: 1px;
+	stroke: #000;
+}
 .tarjetas {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 ul {
-	width: 200px;
-	margin: 1rem;
+	flex-direction: row;
+	list-style: none;
+}
 
-	perspective: 1000px;
-	transform-style: preserve-3d;
+.li {
 }
