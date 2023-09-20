@@ -1,19 +1,45 @@
 body{
-    background-color: #101010;
-    color: white;
+	flex-shrink: 0;
+	background: #FFE9F2;
+	color: #605DF2;
     font-family: Arial;
     font-size: min(18px, max(5vw, 13px));
+	margin: 0;
   }
-
+header{
+	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
+	background-repeat: repeat;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+}
+h1{
+	color: #605DF2;
+	font-family: Inter;
+	font-size: 4rem;
+	font-style: italic;
+	font-weight: 900;
+}
+h2 {
+	color: #000;
+	font-family: Inter;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+section{
+	fill: #FFF;
+	stroke-width: 1px;
+	stroke: #000;
+}
 .tarjetas {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 ul {
-	width: 200px;
-	margin: 1rem;
-
-	perspective: 1000px;
-	transform-style: preserve-3d;
+	flex-direction: row;
+	list-style: none;
+	box-sizing: border-box
 }
