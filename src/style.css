@@ -1,17 +1,26 @@
 body{
-	flex-shrink: 0;
 	background: #FFE9F2;
 	color: #605DF2;
     font-family: Arial;
     font-size: min(18px, max(5vw, 13px));
 	margin: 0;
+	cursor: default;
   }
 header{
 	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
-	background-repeat: repeat;
-	flex-shrink: 0;
+	background-repeat: no-repeat; /*no se repita*/
+	background-size: contain; /*cover para que sea tamaño de toda la pagina, contain para la seccion*/
+	background-attachment: fixed;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+	/*flex-wrap: wrap;*/
+	padding: 50px;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	
 }
 h1{
 	color: #605DF2;
@@ -19,6 +28,10 @@ h1{
 	font-size: 4rem;
 	font-style: italic;
 	font-weight: 900;
+	line-height: normal;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 h2 {
 	color: #000;
@@ -26,20 +39,40 @@ h2 {
 	font-size: 0.875rem;
 	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
+
+
 }
-section{
-	fill: #FFF;
-	stroke-width: 1px;
-	stroke: #000;
-}
-.tarjetas {
+form {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    flex-direction: row;
+    float: inline-start;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    align-content: flex-start;
 }
-ul {
-	flex-direction: row;
-	list-style: none;
-	box-sizing: border-box
+
+@media (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  align-items: start;
+	}
+	h1{
+		font-size:150%;
+		margin: 0%;
+	}
+	h2{
+		padding: 0;
+	}
+	form{
+		display: flex;
+    flex-direction: column;
+	}
+  }
+  
+  /* Estilos para pantallas medianas y grandes */
+  @media (min-width: 769px) {
+	header {
+	  flex-direction: row;
+	}
 }
