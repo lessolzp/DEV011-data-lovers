@@ -1,11 +1,5 @@
 * {margin:0; padding:0; box-sizing:border-box;}
-body{
-<<<<<<< HEAD
-  background-color: white;
-  color: black;
-  font-family: Titillium Web;
-  font-size: min(18px, max(5vw, 13px));
-}
+
 
 .cards {
 	display: flex;
@@ -26,7 +20,6 @@ body{
 .card .back {
 	height: 450px;
 	
-  
 	background-size: cover;
 	background-position: center;
 
@@ -35,6 +28,7 @@ body{
 
 	color: black;
 	font-size: 14px;
+	font-family: titilium Web;
 	text-align: center;
 
 	backface-visibility: hidden;
@@ -109,8 +103,7 @@ img {
 	text-align: left;
 	color: #90C1DB;
 }
-
-=======
+body {
 	background: #FFE9F2;
 	color: #605DF2;
     font-family: Arial;
@@ -188,4 +181,3 @@ form {
 	  flex-direction: row;
 	}
 }
->>>>>>> 060e28415db95578a2a9d25d78996aecd5a37614
