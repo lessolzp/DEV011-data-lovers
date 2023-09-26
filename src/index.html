@@ -32,21 +32,14 @@
           <label for="desc">
               <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
           </label>
+          <button data-testid="button-clear" id="button-clear">Reset</button>
         </select>
-        <button data-testid="button-clear" id="button-filter">Reset</button>
       </form>
-      <section id="root">
-        <ul>
-          <li itemscope itemtype="https://schema.org/Movie"></li>
-          <span itemprop="Peliculas"></span>
-          <dl itemscope itemtype="studio Ghibli">
-            <dt>Name:</dt><dd itemprop="name"></dd>
-            <dt>Descripción:</dt><dd itemprop="año"></dd>
-            <dt>Director:</dt><dd itemprop="dir"></dd>
-            <dt>Productor:</dt><dd itemprop="producer"></dd>
-            <dt>Año:</dt><dd itemprop="año"></dd>
-          </dl>
-        </ul>
+      <button data-testid="button-filter" id="button-filter">Filtrar</button>
+      <section id="root" class="cards">
+        
+        
+
       </section>
     </main>
     <footer></footer>
