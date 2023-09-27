@@ -1,13 +1,12 @@
 // estas funciones son de ejemplo
 
-export const renderItems = (data) => {
-  
-  const filteredData = data.films;
+export const renderFilms = (data) => {
+  const dataFilms = data.films;
   //Creación de elementos
   //Primero vamos a hacer la variable de referencia "padre"
   const container = document.getElementById("root");
   //Empieza el bucle para generar los elementos de cada filme 
-  filteredData.forEach((element) => {
+  dataFilms.forEach((element) => {
   // Crear un elemento <ul> con atributo itemscope y itemtype
   const ulElement = document.createElement("ul");
   ulElement.setAttribute("class", "card");
@@ -115,3 +114,4 @@ export const renderItems = (data) => {
     divContentBack.appendChild(dtDescription);
   });
 };
+
