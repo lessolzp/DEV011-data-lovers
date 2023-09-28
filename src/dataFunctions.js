@@ -1,7 +1,6 @@
-// estas funciones son de ejemplo
-
-export const example = () => {
-  return 'example';
+export const filterData = (data, filterBy, value) => {
+  const filteredData = data.films.filter((film)=> film[filterBy]=== value);
+  return filteredData;
 };
 
 export const anotherExample = () => {

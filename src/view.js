@@ -1,20 +1,15 @@
-// estas funciones son de ejemplo
-
-export const renderItems = (data) => {
-  
-  const filteredData = data.films;
+export const renderItems = (dataItems) => {
   //Creación de elementos
   //Primero vamos a hacer la variable de referencia "padre"
   const container = document.getElementById("root");
   //Empieza el bucle para generar los elementos de cada filme 
-  filteredData.forEach((element) => {
+  dataItems.forEach((element) => {
   // Crear un elemento <ul> con atributo itemscope y itemtype
-  const ulElement = document.createElement("ul");
-  ulElement.setAttribute("class", "card");
-  ulElement.setAttribute("itemscope", "");
-  ulElement.setAttribute("itemtype", "http://schema.org/Movie");
-  // Agregar el elemento <ul> al documento HTML con atributo itemprop
-  
+    const ulElement = document.createElement("ul");
+    ulElement.setAttribute("class", "card");
+    ulElement.setAttribute("itemscope", "");
+    ulElement.setAttribute("itemtype", "http://schema.org/Movie");
+    // Agregar el elemento <ul> al documento HTML con atributo itemprop
     // Crear un elemento <li>
     const liElement = document.createElement("li");
     liElement.setAttribute("class", "front");

@@ -15,17 +15,19 @@
     <main>
       <h2>DataLovers</h2>
       <form>
-        <label for="select-filter">Filtrar por:</label>
-        <select data-testid="select-filter" name="filtro">
+        <label for="select-filter">Filter by:</label>
+        <select data-testid="select-filter" name="properties">
+          <option value="0" selected> Select...
           <option value="director">Director</option>
-          <option value="producer">Productor</option>
-          <option value="release_date">Año</option>
+          <option value="producer">Producer</option>
+        </select>
+        <select name="elements">
+
         </select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
           <option value="rt_score">Ranking</option>
           <option value="release_date">Año</option>
-          <option value="people">Personaje</option>
           <legend>Orden:</legend>
           <label for="asc">
               <input type="radio" id="asc" name="sort-order" value="asc"> Ascendente
@@ -33,10 +35,11 @@
           <label for="desc">
               <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
           </label>
-          <button data-testid="button-clear" id="button-clear">Reset</button>
+          
         </select>
       </form>
-    <button data-testid="button-clear" id="button-filter">Filtrar</button>
+    <button data-testid="button-filter" id="button-filter">Filtrar</button>
+    <button data-testid="button-clear" id="button-clear">Reset</button>
       <section class="cards" id="root">
       </section>
     </main>
