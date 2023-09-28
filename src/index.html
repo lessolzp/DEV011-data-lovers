@@ -15,11 +15,14 @@
     <main>
       <h2>DataLovers</h2>
       <form>
-        <label for="select-filter">Filtrar por:</label>
+        <label for="select-filter">Director:</label>
         <select data-testid="select-filter" name="filtro">
-          <option value="director">Director</option>
-          <option value="producer">Productor</option>
-          <option value="release_date">Año</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
@@ -37,9 +40,9 @@
         </select>
       </form>
     <button data-testid="button-clear" id="button-filter">Filtrar</button>
-      <section class="cards" id="root">
-      </section>
+      <section class="cards" id="root"></section>
     </main>
+    <div id="result-container"></div>
     <footer>Leslie Zuñiga & Catalina Ordenes</footer>
   </body>
 </html>

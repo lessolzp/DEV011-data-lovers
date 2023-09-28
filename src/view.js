@@ -114,4 +114,5 @@ export const renderItems = (data) => {
     divContentBack.appendChild(dlDescription);
     divContentBack.appendChild(dtDescription);
   });
+
 };

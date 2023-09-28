@@ -105,7 +105,7 @@ img {
 }
 body {
 	background: #FFE9F2;
-	color: #605DF2;
+	color: #413d9c;
     font-family: Arial;
     font-size: min(18px, max(5vw, 13px));
 	margin: 0;
@@ -150,7 +150,6 @@ h2 {
 form {
 	display: flex;
     flex-direction: row;
-    float: inline-start;
     justify-content: flex-start;
     align-items: baseline;
     flex-wrap: nowrap;
