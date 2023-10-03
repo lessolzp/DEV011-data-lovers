@@ -17,12 +17,11 @@
       <form>
         <label for="select-filter">Filter by:</label>
         <select data-testid="select-filter" name="properties">
-          <option value="0" selected> Select...
           <option value="director">Director</option>
           <option value="producer">Producer</option>
         </select>
         <select name="elements">
-
+         
         </select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
@@ -38,8 +37,8 @@
           
         </select>
       </form>
-    <button data-testid="button-filter" id="button-filter">Filtrar</button>
     <button data-testid="button-clear" id="button-clear">Reset</button>
+    <span id="results-length"> </span>
       <section class="cards" id="root">
       </section>
     </main>
