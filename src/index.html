@@ -9,19 +9,20 @@
   </head>
   <body>
     <header>
-      <script src="main.js" type="module"></script>
+     
       <h1>Studio Ghibli</h1>
+      
     </header>
     <main>
       <h2>DataLovers</h2>
       <form>
         <label for="select-filter">Filter by:</label>
         <select data-testid="select-filter" name="properties">
+          <option value="title">Movie</option>
           <option value="director">Director</option>
           <option value="producer">Producer</option>
         </select>
         <select name="elements">
-         
         </select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
@@ -39,9 +40,10 @@
       </form>
     <button data-testid="button-clear" id="button-clear">Reset</button>
     <span id="results-length"> </span>
-      <section class="cards" id="root">
+      <section  id="root">
       </section>
     </main>
-    <footer>Leslie Zuñiga & Catalina Ordenes</footer>
+    <footer>Leslie Zuñiga and Catalina Ordenes</footer>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
