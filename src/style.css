@@ -1,182 +1,266 @@
-* {margin:0; padding:0; box-sizing:border-box;}
-
-
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.card {
-	width: 300px;
-	margin: 1rem;
 
-	perspective: 1000px;
-	transform-style: preserve-3d;
-    list-style-type: none;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li.card {
+  width: 300px;
+  margin: 1rem;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  list-style-type: none;
 }
 
 .card .front,
 .card .back {
-	height: 450px;
-	
-	background-size: cover;
-	background-position: center;
+  height: 450px;
 
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
 
-	color: black;
-	font-size: 14px;
-	font-family: titilium Web;
-	text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  color: black;
+  font-size: 14px;
+  font-family: titilium Web;
+  text-align: center;
+
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .card .front {
-  background-color: #957DAD;
+  background-color: #957dad;
   /* Posicion por defecto */
   transform: rotateY(0deg);
 }
 .card .back {
-	width: 100%;
-	
-	background-color: #957DAD;
-	
-	top: 0;
-	left: 0;
-	position: absolute;
+  width: 100%;
+
+  background-color: #957dad;
+
+  top: 0;
+  left: 0;
+  position: absolute;
   /* Posicion por defecto */
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 /* Velocidad de trancicion */
 .card:hover .front,
-.card:hover .back {transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);}
+.card:hover .back {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
 
 /* Girar imagen */
-.card:hover .front {transform: rotateY(-180deg);}
-.card:hover .back {transform: rotateY(0deg);}
-
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
 
 .card .content {
-	width: 100%;
-	position: absolute;
-	
-	padding: 2rem;
-	box-sizing: border-box;
-	
-	top: 50%;
-	left: 0;
-	perspective: inherit;
+  width: 100%;
+  position: absolute;
+
+  padding: 2rem;
+  box-sizing: border-box;
+
+  top: 50%;
+  left: 0;
+  perspective: inherit;
   /* Posicion de texto central */
-	transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
-.front .content  {
-	font-size: 14px;
-	position: relative;
-	margin-bottom: .5rem;
+.front {
+  font-size: 14px;
+  color: #141E51;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.back .content {
+	text-align:left;
+	font-size: 16px;
 }
 .title {
-	font-size: 18px;
-	color: #90C1DB;
-	font-weight: bold;
-	
-	
+  font-size: 20px;
+  color: #90c1db;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #1f264b;
 }
 
 img {
-	align-items: center;
-	border-radius: 8px;
-	width: 240px;
-	height: 270px;
+  align-items: center;
+  border-radius: 8px;
+  width: 240px;
+  height: 270px;
 }
 
-.info {
-	text-align: left;
+.dt {
+  text-align: left;
+}
+dd {
+	text-align: center;
 }
 
 .inlineinfo {
-	display: inline-flex;
-	row-gap: 10px;
-	text-align: left;
-	color: #90C1DB;
+  display: inline-flex;
+  row-gap: 10px;
+  text-align: left;
+  font-family: serif;
+  color: #180b27;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #f3e7f3;
+  margin-top: 10px;
 }
 body {
-	background: #FFE9F2;
-	color: #413d9c;
-    font-family: Arial;
-    font-size: min(18px, max(5vw, 13px));
-	margin: 0;
-	cursor: default;
-  }
-header{
+  background: #ffe9f2;
+  color: #413d9c;
+  font-family: Arial;
+  font-size: min(18px, max(5vw, 13px));
+  margin: 0;
+  cursor: default;
+}
+header {
 	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
 	background-repeat: no-repeat; /*no se repita*/
 	background-size: contain; /*cover para que sea tamaño de toda la pagina, contain para la seccion*/
 	background-attachment: fixed;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	/*flex-wrap: wrap;*/
 	padding: 50px;
 	margin: 0;
 	width: 100%;
 	height: auto;
 	text-align: center;
-	
+	text-shadow: 2px 2px 2px #ffe9f2;
 }
-h1{
-	color: #605DF2;
-	font-family: Inter;
-	font-size: 4rem;
-	font-style: italic;
-	font-weight: 900;
-	line-height: normal;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+h1 {
+  color: #1f264b;
+  font-family: serif;
+  font-size: 6rem;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 h2 {
 	color: #000;
-	font-family: Inter;
-	font-size: 0.875rem;
+	padding: 10px;
+	margin-inline-start: 30px;
+	font-family: serif;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
-
-
 }
 form {
+	margin-bottom: 30px;
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    flex-wrap: nowrap;
-    align-content: flex-start;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+select {
+  background-color: #e7e9d4;
+  color: #413d9c;
+  font-size: 18px;
+  text-shadow: #957dad;
+  border-style: dashed;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+button {
+  background-color: #413d9c;
+  color: #e7e9d4;
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 4px 20px;
+  border-radius: 20px;
+  border-style: dashed;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+label {
+  cursor: default;
 }
 
-@media (max-width: 768px) {
-	header {
-	  flex-direction: column;
-	  align-items: start;
-	}
-	h1{
-		font-size:150%;
-		margin: 0%;
-	}
-	h2{
-		padding: 0;
-	}
-	form{
-		display: flex;
+/* Selector para los radios dentro de las etiquetas <label> */
+input{
+  border-color: #140635; /* Color del borde del radio */
+  background-color: #7e58d9; /* Color de fondo del radio cuando está seleccionado */
+}
+footer {
+  text-align: center;
+}
+@media (max-width: 530px) {
+  header {
     flex-direction: column;
-	}
+    align-items: start;
   }
-  
-  /* Estilos para pantallas medianas y grandes */
-  @media (min-width: 769px) {
-	header {
-	  flex-direction: row;
-	}
+  h1 {
+    font-size: 150%;
+    margin: 0%;
+    color: #ffe9f2;
+    text-shadow: 1px 1px 1px #000;
+  }
+  h2 {
+    padding: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  select {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+  button {
+    padding: 5px 10px;
+  }
+  .card {
+    width: 70%;
+    perspective: 70%;
+    align-items: center;
+  }
+  img {
+    align-items: center;
+    border-radius: 8px;
+    width: 200px;
+    height: 230px;
+  }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 531px) {
+  header {
+    flex-direction: row;
+  }
+}
+/*estilo para pantallas extra pequeñas*/
+@media (max-width: 250px) {
+  .card {
+    width: 60%;
+    perspective: 60%;
+    align-items: center;
+  }
+  img {
+    border-radius: 8px;
+    width: 170px;
+    height: 200px;
+  }
 }

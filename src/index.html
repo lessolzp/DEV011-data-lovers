@@ -15,20 +15,17 @@
     <main>
       <h2>DataLovers</h2>
       <form>
-        <label for="select-filter">Director:</label>
-        <select data-testid="select-filter" name="filtro">
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondo">Yoshifumi Kondo</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        <label for="select-filter">Filter by:</label>
+        <select data-testid="select-filter" name="properties">
+          <option value="director">Director</option>
+          <option value="producer">Producer</option>
+        </select>
+        <select name="elements">
         </select>
         <label for="select-sort">Ordenar:</label>
         <select data-testid="select-sort" name="orden">
           <option value="rt_score">Ranking</option>
           <option value="release_date">Año</option>
-          <option value="people">Personaje</option>
           <legend>Orden:</legend>
           <label for="asc">
               <input type="radio" id="asc" name="sort-order" value="asc"> Ascendente
@@ -36,11 +33,12 @@
           <label for="desc">
               <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
           </label>
-          <button data-testid="button-clear" id="button-clear">Reset</button>
+          
         </select>
       </form>
     <button data-testid="button-clear" id="button-filter">Filtrar</button>
-      <section class="cards" id="root"></section>
+      <section class="cards" id="root">
+      </section>
     </main>
     <div id="result-container"></div>
     <footer>Leslie Zuñiga & Catalina Ordenes</footer>
