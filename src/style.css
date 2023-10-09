@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -105,8 +104,8 @@ img {
   height: 270px;
 }
 
-.dt {
-  text-align: left;
+dt {
+	text-align: left;
 }
 dd {
 	text-align: center;
@@ -121,6 +120,7 @@ dd {
   font-weight: bold;
   text-shadow: 2px 2px 2px #f3e7f3;
   margin-top: 10px;
+
 }
 body {
   background: #ffe9f2;
@@ -196,12 +196,6 @@ button {
 label {
   cursor: default;
 }
-
-/* Selector para los radios dentro de las etiquetas <label> */
-input{
-  border-color: #140635; /* Color del borde del radio */
-  background-color: #7e58d9; /* Color de fondo del radio cuando está seleccionado */
-}
 span {
   text-align: center;
   font-style: italic;
@@ -276,3 +270,4 @@ footer {
     height: 200px;
   }
 }
+

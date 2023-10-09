@@ -7,8 +7,6 @@ const select2 = document.querySelector('select[name="elements"]');
 const selectSort = document.querySelector('[data-testid="select-sort"]');
 const selectOrder = document.querySelector("#sort-order");
 const rankingLength = document.querySelector('[id="ranking-length"]');
-//const radioAsc = document.querySelector('option[value="asc"]');
-//const radioDesc = document.querySelector('option[value="desc"]');
 const resultsLength = document.querySelector('[id="results-length"]');
 const dependentOptions = {
   title: [
@@ -49,6 +47,7 @@ const dependentOptions = {
     "Yoshiaki Nishimura",
   ],
 };
+
 
 //--1---Función para llamar la funcion renderItems para cargar la data de películas al cargar la página
 window.addEventListener("load", () => {
@@ -137,3 +136,4 @@ selectOrder.addEventListener("change", () => {
   const container = document.getElementById("root");
   return container.appendChild(renderItems(sortedData));
 });
+
