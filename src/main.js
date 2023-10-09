@@ -69,7 +69,7 @@ btn2.addEventListener("click", (event) => {
   event.target.style.backgroundColor = "pink";
   //Ahora volvemos a cargar los datos de todas las películas
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(dataItems));
+  container.appendChild( renderItems(dataItems));
 });
 
 //--3-----Función para select depende del otro select
@@ -101,7 +101,7 @@ select2.addEventListener("change", () => {
   //estadistica de ranking
   const estadisticaRanking = computeStat(dataItems);
   rankingLength.innerHTML = `Average ranking/promedio del ranking: ${estadisticaRanking}`;
-  return container.appendChild(renderItems(dataItems));
+  container.appendChild(renderItems(dataItems));
 });
 
 //--5-----función para ordenar la data---------------
@@ -119,7 +119,7 @@ selectSort.addEventListener("change", () => {
     element.remove();
   });
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(sortedData));
+  container.appendChild(renderItems(sortedData));
 });
 //evento change en los select para order
 selectOrder.addEventListener("change", () => {
@@ -134,6 +134,6 @@ selectOrder.addEventListener("change", () => {
     element.remove();
   });
   const container = document.getElementById("root");
-  return container.appendChild(renderItems(sortedData));
+  container.appendChild(renderItems(sortedData));
 });
 

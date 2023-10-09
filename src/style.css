@@ -8,9 +8,10 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-li.card {
-  width: 300px;
-  margin: 1rem;
+
+.card {
+	width: 250px;
+	margin: 1rem;
 
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -19,7 +20,11 @@ li.card {
 
 .card .front,
 .card .back {
-  height: 450px;
+
+	height: 400px;
+	
+	background-size: cover;
+	background-position: center;
 
   background-size: cover;
   background-position: center;
@@ -36,6 +41,13 @@ li.card {
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
+.description {
+  width: 230px;
+  height: 320px;
+  align-content:start;
+}
+
+
 .card .front {
   background-color: #957dad;
   /* Posicion por defecto */
@@ -67,15 +79,17 @@ li.card {
 }
 
 .card .content {
-  width: 100%;
-  position: absolute;
 
-  padding: 2rem;
-  box-sizing: border-box;
+	width: 100%;
+	position: absolute;
+	
+	padding: 1rem;
+	box-sizing: border-box;
+	
+	top: 50%;
+	left: 0;
+	perspective: inherit;
 
-  top: 50%;
-  left: 0;
-  perspective: inherit;
   /* Posicion de texto central */
   transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
@@ -87,49 +101,52 @@ li.card {
 }
 .back .content {
 	text-align:left;
-	font-size: 16px;
+	font-size: 14px;
 }
 .title {
-  flex: auto;
-  font-size: 20px;
-  color: #90c1db;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px #1f264b;
+	font-size: 18px;
+	color: #90C1DB;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #1f264b;
 }
 
 img {
-  align-items: center;
-  border-radius: 8px;
-  width: 240px;
-  height: 270px;
+	align-items: center;
+	border-radius: 8px;
+	width: 190px;
+	height: 225px;
+
 }
 
 dt {
 	text-align: left;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #f3e7f3;
 }
 dd {
 	text-align: center;
 }
 
 .inlineinfo {
-  display: inline-flex;
+
+	display: inline-flex;
   row-gap: 10px;
   text-align: left;
   font-family: serif;
-  color: #180b27;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px #f3e7f3;
+  color: #180b27;  
   margin-top: 10px;
-
 }
+
 body {
-  background: #ffe9f2;
+
+	background: #ffe9f2;
   color: #413d9c;
   font-family: Arial;
   font-size: min(18px, max(5vw, 13px));
   margin: 0;
   cursor: default;
 }
+
 header {
 	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
 	background-repeat: no-repeat; /*no se repita*/
