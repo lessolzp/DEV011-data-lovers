@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-     
+
       <h1>Studio Ghibli</h1>
       
     </header>
     <main>
-      <h2>DataLovers</h2>
+      <h2>
+        DataLovers: Discover more by hovering over the cards!/¡Descubre más al
+        deslizar el cursor sobre las tarjetas!
+      </h2>
       <form>
         <label for="select-filter">Filter by:</label>
-        <select data-testid="select-filter" name="properties">
+        <select
+          data-testid="select-filter"
+          name="properties"
+          id="select-filter"
+        >
           <option value="title">Movie</option>
           <option value="director">Director</option>
           <option value="producer">Producer</option>
         </select>
-        <select name="elements">
-        </select>
-        <label for="select-sort">Ordenar:</label>
-        <select data-testid="select-sort" name="orden">
+        <label for="elements"></label>
+        <select name="elements" id="elements"></select>
+        <label for="select-sort">Sorted by:</label>
+        <select data-testid="select-sort" name="orden" id="select-sort">
           <option value="rt_score">Ranking</option>
           <option value="release_date">Año</option>
-          <legend>Orden:</legend>
-          <label for="asc">
-              <input type="radio" id="asc" name="sort-order" value="asc"> Ascendente
-          </label>
-          <label for="desc">
-              <input type="radio" id="desc" name="sort-order" value="desc"> Descendente
-          </label>
-          
         </select>
+        <label for="sort-order">Orden:</label>
+        <select name="sort-order" id="sort-order">
+          <option value="asc">ascendente</option>
+          <option value="desc">descendente</option>
+        </select>
+        <label for="button-clear">
+          <button data-testid="button-clear" id="button-clear">
+            Reset
+          </button></label>
       </form>
-    <button data-testid="button-clear" id="button-clear">Reset</button>
-    <span id="results-length"> </span>
-      <section  id="root">
-      </section>
+      <span id="results-length"></span>
+      <aside id="ranking-length"></aside>
+      <section id="root"></section>
     </main>
-    <footer>Leslie Zuñiga and Catalina Ordenes</footer>
+    <footer>Project DataLover by: Leslie Zuñiga and Catalina Ordenes</footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>

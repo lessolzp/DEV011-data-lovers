@@ -4,6 +4,7 @@ export const renderItems = (dataItems) => {
   //Primero vamos a hacer la variable de referencia "padre"
   const ul = document.createElement('ul')
   ul.setAttribute("name","cards")
+
   let template = "";
   dataItems.forEach((element) => {
     const infoPeople = peopleData(element);
