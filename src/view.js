@@ -33,8 +33,10 @@ export const renderItems = (dataItems) => {
           <div class="title">
             <dt></dt><dd itemprop="title">${element.title}</dd>
           </div>
-        <dt></dt><dd itemprop="description">${element.description}</dd>
-        <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length}  characters</dd> 
+          <div class= "description">
+            <dt></dt><dd class="text" itemprop="description">${element.description}</dd>
+          </div>
+         <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length}   characters</dd> 
         </div>
       </dl>
     </div>

@@ -684,7 +684,7 @@ export const data = [
     "description": "Porco Rosso, known in Japan as Crimson Pig (Kurenai no Buta) is the sixth animated film by Hayao Miyazaki and released in 1992. You're introduced to an Italian World War I fighter ace, now living as a freelance bounty hunter chasing 'air pirates' in the Adriatic Sea. He has been given a curse that changed his head to that of a pig. Once called Marco Pagot, he is now known to the world as 'Porco Rosso', Italian for 'Red Pig.'",
     "director": "Hayao Miyazaki",
     "producer": "Toshio Suzuki",
-    "poster" : "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/4/41/Porco_Rosso.jpg",
     "release_date": "1992",
     "rt_score": "94",
     "people": [
@@ -798,6 +798,622 @@ export const data = [
         }
       }
     ]
+  },
+  {
+    "id": "90b72513-afd4-4570-84de-a56c312fdf81",
+    "title": "The Cat Returns",
+    "description": "Haru, a schoolgirl bored by her ordinary routine, saves the life of an unusual cat and suddenly her world is transformed beyond anything she ever imagined. The Cat King rewards her good deed with a flurry of presents, including a very shocking proposal of marriage to his son! Haru embarks on an unexpected journey to the Kingdom of Cats where her eyes are opened to a whole other world.",
+    "director": "Hiroyuki Morita",
+    "producer": "Toshio Suzuki",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Cat_Returns.jpg",
+    "release_date": "2002",
+    "rt_score": "89",
+    "people": [
+      {
+        "id": "6b3facea-ea33-47b1-96ce-3fc737b119b8",
+        "name": "Renaldo Moon aka Moon aka Muta",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/e7/Muta.png",
+        "gender": "Male",
+        "age": "NA",
+        "eye_color": "White",
+        "hair_color": "Beige",
+        "specie": "Cat"
+      },
+      {
+        "id": "3042818d-a8bb-4cba-8180-c19249822d57",
+        "name": "Cat King",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/34/The_Cat_King.jpg",
+        "gender": "Male",
+        "age": "87",
+        "eye_color": "Emerald",
+        "hair_color": "Grey",
+        "specie": "Cat"
+      },
+      {
+        "id": "58d1973f-f247-47d7-9358-e56cb0d2b5a6",
+        "name": "Yuki",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/eb/New_queen%2C_Yuki.JPG",
+        "gender": "Female",
+        "age": "NA",
+        "eye_color": "Blue",
+        "hair_color": "White",
+        "specie": "Cat"
+      },
+      {
+        "id": "a3d8e70f-46a0-4e5a-b850-db01620d6b92",
+        "name": "Haru Yoshioka",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/27/Haru_Yoshioka.jpg",
+        "gender": "Female",
+        "age": "17",
+        "eye_color": "Brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "466bc926-2024-4653-ac63-fe52f2dc8c7b",
+        "name": "Natori",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c4/Natori.jpg",
+        "gender": "Male",
+        "age": "NA",
+        "eye_color": "Blue",
+        "hair_color": "Grey",
+        "specie": "Cat"
+      },
+      {
+        "id": "269dcd81-8037-45bb-892b-1c86c9696222",
+        "name": "Toto",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8d/Toto.png",
+        "gender": "Male",
+        "age": "NA",
+        "eye_color": "Black",
+        "hair_color": "Dark Blue",
+        "specie": "Bird"
+      },
+      {
+        "id": "5b2a28f6-91d4-4382-aedc-b27094e763b0",
+        "name": "Prince Lune",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/90/Prince_Lune.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Dark brown",
+        "hair_color": "Russian blue",
+        "specie": "Cat"
+      },
+      {
+        "id": "17aca709-3049-48fc-95a6-e802c01125a2",
+        "name": "Hiromi",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Hiromi.png",
+        "gender": "Female",
+        "age": "17",
+        "eye_color": "Brown",
+        "hair_color": "Light brown",
+        "specie": "Human"
+      },
+      {
+        "id": "911d38e2-ada4-4481-89a2-ba414422d4e4",
+        "name": "Naoko Yoshioka",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/64/Naoko_Yoshioka.jpg",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Light Brown",
+        "hair_color": "Light brown",
+        "specie": "Human"
+      }
+    ],
+    "locations": [
+      {
+        "id": "a8bd9c03-7c80-4a97-b7c0-6a668acaf576",
+        "name": "The Cat Kingdom",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/a9/Baron022.jpg",
+        "climate": "Continental",
+        "terrain": "Plain",
+        "surface_water": "30",
+        "residents": [
+          {
+            "id": "6b3facea-ea33-47b1-96ce-3fc737b119b8",
+            "name": "Renaldo Moon aka Moon aka Muta"
+          },
+          {
+            "id": "3042818d-a8bb-4cba-8180-c19249822d57",
+            "name": "Cat King"
+          },
+          {
+            "id": "58d1973f-f247-47d7-9358-e56cb0d2b5a6",
+            "name": "Yuki"
+          },
+          {
+            "id": "a3d8e70f-46a0-4e5a-b850-db01620d6b92",
+            "name": "Haru"
+          }
+        ]
+      }
+    ],
+    "vehicles": []
+  },
+  {
+    "id": "1b67aa9a-2e4a-45af-ac98-64d6ad15b16c",
+    "title": "Pom Poko",
+    "description": "As the human city development encroaches on the raccoon population's forest and meadow habitat, the raccoons find themselves faced with the very real possibility of extinction. In response, the raccoons engage in a desperate struggle to stop the construction and preserve their home.",
+    "director": "Isao Takahata",
+    "producer": "Toshio Suzuki",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/9/9e/Pom_Poko.jpg",
+    "release_date": "1994",
+    "rt_score": "78",
+    "people": [
+      {
+        "id": "575d6943-f9da-445e-8e77-e118c3924a1d",
+        "name": "Shoukichi",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/59/Shoukichi_1.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Brown",
+        "specie": "Raccoon Dog"
+      },
+      {
+        "id": "9298c4fe-a508-463f-aad7-d55742e9a4e5",
+        "name": "Okiyo",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/b/bd/Okiyo.jpg",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Brown",
+        "specie": "Raccoon Dog"
+      },
+      {
+        "id": "220c7498-c390-4456-b853-bac107d16ff7",
+        "name": "Seizaemon",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d9/Seizaemon.jpg",
+        "gender": "Male",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "Grey",
+        "specie": "Raccoon Dog"
+      },
+      {
+        "id": "718f634a-ea92-4907-a262-5a71a0661dcd",
+        "name": "Oroku",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/07/Oroku.jpg",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "Grey brown",
+        "specie": "Raccoon Dog"
+      },
+      {
+        "id": "7367f154-4d9b-4e3e-89cf-2bd55c4d817f",
+        "name": "Gonta",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/0b/Gonta.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Grey",
+        "specie": "Raccoon Dog"
+      },
+      {
+        "id": "041cad03-ad0d-4f80-aeaa-71f9f64334df",
+        "name": "Inugami Gyōbu",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/99/Inugami.jpg",
+        "gender": "Male",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "Grey brown",
+        "specie": "Raccoon Dog"
+      }
+    ],
+    "locations": [],
+    "vehicles": []
+  },
+  {
+    "id": "45204234-adfd-45cb-a505-a8e7a676b114",
+    "title": "My Neighbors the Yamadas",
+    "description": "The Yamadas are a typical middle class Japanese family in urban Tokyo and this film shows us a variety of episodes of their lives. With tales that range from the humourous to the heartbreaking, we see this family cope with life's little conflicts, problems and joys in their own way.",
+    "director": "Isao Takahata",
+    "producer": "Toshio Suzuki",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbors_the_Yamadas.jpg",
+    "release_date": "1999",
+    "rt_score": "75",
+    "people": [
+      {
+        "id": "7b3324ad-0ac9-417d-9905-ac001f6b7b1a",
+        "name": "Takashi Yamada",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/84/Takashi.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "specie": "Human"
+      },
+      {
+        "id": "562cf83f-fe38-44bf-8840-f8120b373c07",
+        "name": "Matsuko Yamada",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/85/Matsuko_Yamada.png",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Grey",
+        "specie": "Human"
+      },
+      {
+        "id": "33504e52-626b-4718-b324-d06a5b64ccfe",
+        "name": "Noboru Yamada",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d4/Noboru.jpg",
+        "gender": "Male",
+        "age": "13",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "specie": "Human"
+      },
+      {
+        "id": "097a7111-7bca-43e2-b8ad-0042c175b8c9",
+        "name": "Nonoko Yamada",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/56/Nonoko_Yamada.jpg",
+        "gender": "Female",
+        "age": "5",
+        "eye_color": "Black",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "10857681-11a2-48df-98ec-de711a6c56cf",
+        "name": "Shige Yamano",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/97/Shige_Yamano.jpg",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "White",
+        "specie": "Human"
+      }
+    ],
+    "locations": [],
+    "vehicles": []
+  },
+  {
+    "id": "578ae244-7750-4d9f-867b-f3cd3d6fecf4",
+    "title": "The Tale of the Princess Kaguya",
+    "description": "A bamboo cutter named Sanuki no Miyatsuko discovers a miniature girl inside a glowing bamboo shoot. Believing her to be a divine presence, he and his wife decide to raise her as their own, calling her 'Princess'.",
+    "director": "Isao Takahata",
+    "producer": "Yoshiaki Nishimura",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/8/87/The_Tale_of_the_Princess_Kaguya.jpg",
+    "release_date": "2013",
+    "rt_score": "100",
+    "people": [
+      {
+        "id": "a8b338c0-e586-4c1c-8857-f33540d0d4d7",
+        "name": "Kaguya",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d4/Kaguya_shows_off_her_teeth.jpg",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Navy blue",
+        "specie": "Human"
+      },
+      {
+        "id": "a21fbdd5-16bc-4931-80d0-3ce89ffce778",
+        "name": "Sutemaru",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/37/Sutemaru.PNG",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "specie": "Human"
+      },
+      {
+        "id": "4c697b7d-4f64-4ac9-ae29-e155eb1693f3",
+        "name": "Ishitsukuri",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5c/Ghibli-kaguya-ishitsukuri.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "specie": "Human"
+      },
+      {
+        "id": "fe1e5acf-e5e4-4769-9755-989cf7a2e961",
+        "name": "Miyatsuko",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/4a/Sanuki_no_Miyatsuko.jpeg",
+        "gender": "Male",
+        "age": "Elder",
+        "eye_color": "Grey",
+        "hair_color": "White",
+        "specie": "Human"
+      },
+      {
+        "id": "839ff5b9-69ba-4d55-ab77-de939b46b18a",
+        "name": "Menowarawa",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/22/Menowarawa.jpg",
+        "gender": "Female",
+        "age": "17",
+        "eye_color": "Black",
+        "hair_color": "Navy blue",
+        "specie": "Human"
+      },
+      {
+        "id": "1752fc88-c6b7-4fef-8b64-51451d808033",
+        "name": "Lady Sagami",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/28/Sagami.png",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "specie": "Human"
+      },
+      {
+        "id": "942fb1029-b51f-4100-8bee-86547c09b0ff",
+        "name": "Inbe no Akita",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/1c/Ghibli-kaguya-akita.jpg",
+        "gender": "Male",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "White",
+        "specie": "Human"
+      },
+      {
+        "id": "be634b4e-c333-4225-a5f0-2a0aa33d6453",
+        "name": "Ōna",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cb/Ouna.jpg",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "Grey",
+        "specie": "Human"
+      }
+    ],
+    "locations": [
+      {
+        "id": "682df5c3-b09e-46af-94d1-ae0d17f9b4b6",
+        "name": "Bamboo Forest",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/e/ec/Ghibli-kaguya-bamboo-forest.jpg",
+        "climate": "Tropical",
+        "terrain": "Forest",
+        "surface_water": "10",
+        "residents": [
+          "TODO"
+        ]
+      }
+    ],
+    "vehicles": []
+  },
+  {
+    "id": "5fdfb320-2a02-49a7-94ff-5ca418cae602",
+    "title": "When Marnie Was There",
+    "description": "The film follows Anna Sasaki living with her relatives in the seaside town. Anna comes across a nearby abandoned mansion, where she meets Marnie, a mysterious girl who asks her to promise to keep their secrets from everyone. As the summer progresses, Anna spends more time with Marnie, and eventually Anna learns the truth about her family and foster care.",
+    "director": "Hiromasa Yonebayashi",
+    "producer": "Yoshiaki Nishimura",
+    "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/7/7a/When_Marnie_Was_There.jpg",
+    "release_date": "2014",
+    "rt_score": "92",
+    "people": [
+      {
+        "id": "4a6a60d1-cb07-464f-889c-fecaff19b4ef",
+        "name": "Marnie",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/21/Marnie.jpg",
+        "gender": "Female",
+        "age": "12",
+        "eye_color": "Green",
+        "hair_color": "Blonde",
+        "specie": "Human"
+      },
+      {
+        "id": "28d07ace-c309-48c6-b48e-ae2ece3a238c",
+        "name": "Anna Sasaki",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ae/Anna.png",
+        "gender": "Female",
+        "age": "12",
+        "eye_color": "Blue",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "d0a0bd7c-7521-45a2-a681-573a67f34a5b",
+        "name": "Emily",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cd/13_year_old_Emily.png",
+        "gender": "Female",
+        "age": "20",
+        "eye_color": "Dark brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "08fdd37a-2cf0-4f91-ae1c-344ecff39753",
+        "name": "Kazuhiko",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/09/Kazuhiko.jpg",
+        "gender": "Male",
+        "age": "Teenager",
+        "eye_color": "Dark brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "66bca178-9920-4ec3-91e9-0d5b8a76dba1",
+        "name": "Setsu Oiwa",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/6/6e/Setsu.jpg",
+        "gender": "Female",
+        "age": "50-60",
+        "eye_color": "Dark brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "5b8e4413-f943-40ba-8f9f-0ba059a401f0",
+        "name": "Hisako",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/93/Hisako.png",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Dark brown",
+        "hair_color": "Grey",
+        "specie": "Human"
+      },
+      {
+        "id": "c827feae-8ccf-4ced-84cb-bc3e226b1cd1",
+        "name": "Yoriko Sasaki",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5d/Yoriko_Sasaki.jpg",
+        "gender": "Female",
+        "age": "Adult",
+        "eye_color": "Dark brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "9d3730cb-ec15-4bf9-a2fb-a7772e5e1c03",
+        "name": "Sayaka",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/7/79/Sayaka.jpg",
+        "gender": "Female",
+        "age": "11",
+        "eye_color": "Teal",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "31b49ef6-ee60-4603-b983-e67fa0718aa9",
+        "name": "Kiyomasa Ōiwa",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d7/Kiyomasa.jpg",
+        "gender": "Male",
+        "age": "50-60",
+        "eye_color": "Dark brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "5d52d16f-ce72-41bd-8d88-436e206d9449",
+        "name": "Doctor Yamashita",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8a/Yamashita.jpg",
+        "gender": "Male",
+        "age": "Adult",
+        "eye_color": "Black",
+        "hair_color": "Navy blue",
+        "specie": "Human"
+      }
+    ],
+    "locations": [
+      {
+        "id": "56e423c4-d9a1-44c4-8bdb-1cab45fbf63e",
+        "name": "The Marsh House",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/8c/Marsh_house.jpg",
+        "climate": "Mild",
+        "terrain": "Marsh",
+        "surface_water": "60",
+        "residents": []
+      }
+    ],
+    "vehicles": []
+  },
+  {
+    "id": "2de9426b-914a-4a06-a3a0-5e6d9d3886f6",
+    "title": "The Secret World of Arrietty",
+    "description": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
+    "director": "Hiromasa Yonebayashi",
+    "producer": "Toshio Suzuki",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDY3ZGI0ZDAtMThlNy00MzAxLTg4YjAtNjkwYTkxNmQ4MjdlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    "release_date": "2010",
+    "rt_score": "95",
+    "people": [
+      {
+        "id": "89026b3a-abc4-4053-ab1a-c6d2eea68faa",
+        "name": "Karigurashi/Arrietty",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/04/Arrietty.jpg",
+        "gender": "Female",
+        "age": "14",
+        "eye_color": "Black",
+        "hair_color": "Auburn",
+        "specie": "Borrower"
+      },
+      {
+        "id": "496031cc-f6af-4f48-b9d1-27f34cb18e10",
+        "name": "Sho (Shawn)",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/04/Sho.jpg",
+        "gender": "Male",
+        "age": "12-14",
+        "eye_color": "Brown",
+        "hair_color": "Navy blue/black",
+        "specie": "Human"
+      },
+      {
+        "id": "ef5ee7c5-ae68-418d-a319-f3e79262cd87",
+        "name": "Homily Clock",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/2/28/Homily_Clock.jpg",
+        "gender": "Female",
+        "age": "52",
+        "eye_color": "Brown",
+        "hair_color": "Navy black",
+        "specie": "Borrower"
+      },
+      {
+        "id": "3a83aa65-d134-4e58-85b2-e9f6523b047d",
+        "name": "Sadako Maki/Jessica",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/1/1b/Jessica.jpg",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Black",
+        "hair_color": "Grey",
+        "specie": "Human"
+      },
+      {
+        "id": "9c687441-3eb3-4c4b-8752-55774953aa3f",
+        "name": "Haru",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/3/3d/Haru_%28dam%29.jpg",
+        "gender": "Female",
+        "age": "Elder",
+        "eye_color": "Brown",
+        "hair_color": "Brown",
+        "specie": "Human"
+      },
+      {
+        "id": "ce5fb645-f0bb-4c1b-829f-907989d5525f",
+        "name": "Spiller",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/4/43/Spiller.jpg",
+        "gender": "Male",
+        "age": "Young",
+        "eye_color": "Black",
+        "hair_color": "Navy black",
+        "specie": "Borrower"
+      },
+      {
+        "id": "a27ebdcb-4d29-40ac-8da6-5fc5a7869efb",
+        "name": "Pod Clock",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/7/76/Pod.png",
+        "gender": "Male",
+        "age": "52",
+        "eye_color": "Grey",
+        "hair_color": "Brown",
+        "specie": "Borrower"
+      },
+      {
+        "id": "379f1453-38ca-486f-9d8b-f4eddc1e3fd3",
+        "name": "Niya",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/5/5a/Niya.jpg",
+        "gender": "Male",
+        "age": "52",
+        "eye_color": "White",
+        "hair_color": "Beige",
+        "specie": "Cat"
+      }
+    ],
+    "locations": [
+      {
+        "id": "1e7ed524-4b4f-466b-978c-69dda9777396",
+        "name": "Sho's house",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/8/86/Karigurashi002.jpg",
+        "climate": "Warm",
+        "terrain": "Forest",
+        "surface_water": "10",
+        "residents": [
+          "TODO"
+        ]
+      },
+      {
+        "id": "f2148ab5-f272-4057-b05a-1321e35227b4",
+        "name": "Karigurashi's house",
+        "img": "https://static.wikia.nocookie.net/studio-ghibli/images/c/cd/Karigurashi019.jpg",
+        "climate": "Warm",
+        "terrain": "Under the floorboards",
+        "surface_water": "10",
+        "residents": [
+          "TODO"
+        ]
+      }
+    ],
+    "vehicles": []
   },
 ];
 

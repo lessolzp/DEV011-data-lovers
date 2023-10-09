@@ -41,7 +41,7 @@ btn2.addEventListener('click', ()=> {
   select2.value = "";
   //Ahora volvemos a cargar los datos de todas las películas
   const container = document.getElementById("root");
-  return container.appendChild( renderItems(dataItems))
+  container.appendChild( renderItems(dataItems))
 });
 
 //--3-----Función para select depende del otro select
@@ -72,7 +72,6 @@ select2.addEventListener('change',()=>{
   const container = document.getElementById("root");
   return container.appendChild(renderItems(dataItems))
 });
-
 
 //--5-----función para ordenar la data---------------
 
