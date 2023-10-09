@@ -1,17 +1,18 @@
-import { peopleData} from './dataFunctions.js';
+import { peopleData } from "./dataFunctions.js";
 
 export const renderItems = (dataItems) => {
   //Primero vamos a hacer la variable de referencia "padre"
-  const container = document.getElementById("root");
-  let template ="";
+  const ul = document.createElement("ul");
+  ul.setAttribute("name", "cards");
+  let template = "";
   dataItems.forEach((element) => {
     const infoPeople = peopleData(element);
     template += `
-    <ul class ="card">
-    <li class="front" itemscope itemtype="movies" >
+    <li class ="card" itemscope itemtype="movies" >
+    <div class="front">
       <dl></dl>
       <div class="content">
-        <img src="${element.poster}" alt=" "></img>
+        <img src="${element.poster}" alt=" "/>
         <div class="title">
           <dt></dt><dd itemprop="title">${element.title}</dd>  
         </div>
@@ -25,21 +26,21 @@ export const renderItems = (dataItems) => {
         </div>
       </div>
       </dl>
-    </li>
-    <li class="back" itemscope itemtype="movies">
+    </div>
+    <div class="back" itemscope itemtype="movies">
       <dl>
         <div class="content">
           <div class="title">
             <dt></dt><dd itemprop="title">${element.title}</dd>
           </div>
         <dt></dt><dd itemprop="description">${element.description}</dd>
-        <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length} characters</dd> 
+        <dt>Cast:</dt><dd itemprop="description">It has ${infoPeople.length}  characters</dd> 
         </div>
       </dl>
+    </div>
     </li>
-    </ul>
     `;
   });
-  container.innerHTML = template;
-  return container;
+  ul.innerHTML = template;
+  return ul;
 };
