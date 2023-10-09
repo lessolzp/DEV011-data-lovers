@@ -1,39 +1,45 @@
-* {margin:0; padding:0; box-sizing:border-box;}
-
-
-ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
 	width: 250px;
 	margin: 1rem;
 
-	perspective: 1000px;
-	transform-style: preserve-3d;
-    list-style-type: none;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  list-style-type: none;
 }
 
 .card .front,
 .card .back {
+
 	height: 400px;
 	
 	background-size: cover;
 	background-position: center;
 
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
 
-	color: black;
-	font-size: 14px;
-	font-family: titilium Web;
-	text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 
-	backface-visibility: hidden;
-	transform-style: preserve-3d;
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  color: black;
+  font-size: 14px;
+  font-family: titilium Web;
+  text-align: center;
+
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .description {
   width: 230px;
@@ -43,31 +49,37 @@ ul {
 
 
 .card .front {
-  background-color: #957DAD;
+  background-color: #957dad;
   /* Posicion por defecto */
   transform: rotateY(0deg);
 }
 .card .back {
-	width: 100%;
-	
-	background-color: #957DAD;
-	
-	top: 0;
-	left: 0;
-	position: absolute;
+  width: 100%;
+
+  background-color: #957dad;
+
+  top: 0;
+  left: 0;
+  position: absolute;
   /* Posicion por defecto */
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 /* Velocidad de trancicion */
 .card:hover .front,
-.card:hover .back {transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);}
+.card:hover .back {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
 
 /* Girar imagen */
-.card:hover .front {transform: rotateY(-180deg);}
-.card:hover .back {transform: rotateY(0deg);}
-
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
 
 .card .content {
+
 	width: 100%;
 	position: absolute;
 	
@@ -77,14 +89,15 @@ ul {
 	top: 50%;
 	left: 0;
 	perspective: inherit;
+
   /* Posicion de texto central */
-	transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
-.front   {
-	font-size: 14px;
-	color: #141E51
-	position: relative;
-	margin-bottom: .5rem;
+.front {
+  font-size: 14px;
+  color: #141E51;
+  position: relative;
+  margin-bottom: 0.5rem;
 }
 .back .content {
 	text-align:left;
@@ -102,6 +115,7 @@ img {
 	border-radius: 8px;
 	width: 190px;
 	height: 225px;
+
 }
 
 dt {
@@ -114,16 +128,17 @@ dd {
 }
 
 .inlineinfo {
+
 	display: inline-flex;
   row-gap: 10px;
   text-align: left;
   font-family: serif;
-  color: #180b27;
-  
+  color: #180b27;  
   margin-top: 10px;
 }
 
 body {
+
 	background: #ffe9f2;
   color: #413d9c;
   font-family: Arial;
@@ -131,25 +146,26 @@ body {
   margin: 0;
   cursor: default;
 }
-header{
+
+header {
 	background-image: url(https://thatshelf.com/wp-content/uploads/2012/03/Spirited-Away-The-Films-of-Studio-Ghibli-Featured.jpg);
-  background-repeat: no-repeat; /*no se repita*/
-  background-size: contain; /*cover para que sea tamaño de toda la pagina, contain para la seccion*/
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  margin: 0;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  text-shadow: 2px 2px 2px #ffe9f2;
+	background-repeat: no-repeat; /*no se repita*/
+	background-size: contain; /*cover para que sea tamaño de toda la pagina, contain para la seccion*/
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	text-shadow: 2px 2px 2px #ffe9f2;
 }
-h1{
-	color: #1f264b;
+h1 {
+  color: #1f264b;
   font-family: serif;
-  font-size: 5rem;
+  font-size: 6rem;
   line-height: normal;
   display: flex;
   justify-content: space-between;
@@ -163,51 +179,55 @@ h2 {
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 400;
-  }
-
+}
 form {
 	margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
 }
-select{
-	background-color: #e7e9d4;
+select {
+  background-color: #e7e9d4;
   color: #413d9c;
+  font-size: 18px;
   text-shadow: #957dad;
   border-style: dashed;
   margin-left: 10px;
   margin-right: 10px;
 }
-
 button {
-	background-color: #fffbcd;
-	color: #000;
-	margin-left: 5px;
-	padding: 3px 5px;
-	border-radius: 20px;
-	border-style: dashed;
-	cursor: pointer;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-  }
-  /*aquí va estilo para cuando se selecciona los radio*/
-  label {
-	cursor: default;
+  background-color: #413d9c;
+  color: #e7e9d4;
+  font-size: 18px;
+  margin-left: 10px;
+  padding: 4px 20px;
+  border-radius: 20px;
+  border-style: dashed;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
-
-/* Selector para los radios dentro de las etiquetas <label> */
-label input[type="radio"] {
-  border-color: #140635; /* Color del borde del radio */
-  background-color: #7e58d9; /* Color de fondo del radio cuando está seleccionado */
+label {
+  cursor: default;
+}
+span {
+  text-align: center;
+  font-style: italic;
+}
+aside{
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  width: auto;
+  height: auto;
 }
 footer {
   text-align: center;
 }
-@media (max-width: 530px) {
+@media (max-width: 680px) {
   header {
     flex-direction: column;
     align-items: start;
@@ -232,7 +252,7 @@ footer {
     padding: 5px;
     margin-bottom: 5px;
   }
-  .button {
+  button {
     padding: 5px 10px;
   }
   .card {
@@ -249,7 +269,7 @@ footer {
 }
 
 /* Estilos para pantallas medianas y grandes */
-@media (min-width: 531px) {
+@media (min-width: 681px) {
   header {
     flex-direction: row;
   }
@@ -266,3 +286,5 @@ footer {
     width: 170px;
     height: 200px;
   }
+}
+

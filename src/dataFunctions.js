@@ -18,9 +18,17 @@ export const sortData = (dataItems, sortBy, sortOrder) => {
   return sortedData;
 };
 
-export const peopleData =(film) =>{
-  const dataPeople = film.people.map((i)=>{
+export const peopleData = (film) => {
+  const dataPeople = film.people.map((i) => {
     return i.name;
   });
   return dataPeople;
+};
+export const computeStat = (data) => {
+  const totalRanking = data.reduce(
+    (sum, film) => sum + parseFloat(film.rt_score),
+    0
+  );
+  const promedioRanking = totalRanking / data.length;
+  return promedioRanking.toFixed(2);
 };
