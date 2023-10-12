@@ -60,4 +60,3 @@ Se hizo una página web de peliculas Studio Ghibli, los usuarios pueden hacer un
 
   No estaba claro que las tarjetas al pasar el cursor se daban vuelta para mostrar más información, entonces se puso un mensaje antes de los select para informar de esto al usuario.
   
-  
